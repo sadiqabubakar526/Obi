@@ -1,6 +1,9 @@
 import React,{useState } from 'react';
 import '../App.css'
-import {HiMenuAlt3} from 'react-icons/hi'
+import {HiMenuAlt3} from 'react-icons/hi';
+import {Link} from 'react-router-dom';
+import Port from './portfolio';
+import Home from './home';
 
 const Top= props =>{
     let [show , setShow ]=useState('none')
@@ -9,26 +12,28 @@ const Top= props =>{
            <header>
                <div className="top">
                    <span>
-                       <p>Logo</p>
+                       <h5 className="african" >I am African !Black</h5 >
                     </span>
                     <span class="nav">
                         <ul style={{color:'white'}}>
-                            <li>{props.home}</li>
-                            <li>{props.portfolio}</li>
-                            <li>{props.contact}</li>
+                            <Link to="/"><li>{props.home}</li></Link>
+                            <Link to='/Port'> <li>{props.portfolio}</li></Link>
+                            <Link to="/"> <li>{props.contact}</li></Link>
                         </ul>
                     </span>
                     <span className='menu'>
-                        <h5 style={{cursor:'pointer'}}><h2> <HiMenuAlt3/></h2></h5>
+                        <h5 style={{cursor:'pointer'}} onClick={()=>setShow('block')}><h2> <HiMenuAlt3/></h2></h5>
                        
                     </span>
                </div>
            </header>
            <div className="sidebar" style={{display:show}}>
+              
                <div className="child">
+               <h1 onClick={()=>setShow('none')}>&times;</h1>
                    <ul style={{cursor:'pointer'}}>
-                       <li>HOME</li>
-                       <li>PORFOLIO</li>
+                       <li><Link to="/">HOME</Link></li>
+                       <li><Link to="Port">PORFOLIO</Link></li>
                        <li>ABOUT</li>
                    </ul>
                </div>

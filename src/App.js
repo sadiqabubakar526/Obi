@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/home.jsx';
 import Port from './components/portfolio'
 import Err from './components/error'
+import About from './components/about'
 import { BrowserRouter as Router , Route , Switch } from 'react-router-dom'
 function App() {
   return (

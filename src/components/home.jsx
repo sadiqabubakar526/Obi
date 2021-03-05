@@ -5,13 +5,16 @@ import {Link } from 'react-router-dom'
 // import Port from './portfolio'
 import {AiFillDribbbleCircle , AiFillBehanceSquare ,AiFillGithub, AiOutlineTwitter} from 'react-icons/ai'
 const Home=()=>{
-
+    
     return (
         <div>
-            <Top home="HOME" portfolio="PORTFOLIO" contact="CONTACT"/>
+        
+                <Top home="HOME" portfolio="PORTFOLIO" contact="CONTACT" />
+         
 
             {/* intro page */}
-            <section>
+            <section className="flow">
+              
                 <div className="intro" >
                     
                          
@@ -27,7 +30,7 @@ const Home=()=>{
                             <h4>Ejeh Obiabo Immanuel</h4>
                             <center>   <span className="empty"></span></center>
                             <div className="author">
-                            <p style={{textAlign:'center'}}>A UI/UX Designer | Web Developer  | App Developer .</p><p>    I simplify  the web and applicatio for you all i see in the world is designed and programmed </p>
+                            <p style={{textAlign:'center'}}>A UI/UX Designer | Web Developer  | App Developer .</p><p>    I simplify  the web and applicatio for you all i see in the world is designed and programmed. </p>
                             </div>
                         </div>
                     <center>
