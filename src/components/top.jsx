@@ -22,7 +22,7 @@ const Top= props =>{
                         </ul>
                     </span>
                     <span className='menu'>
-                        <h5 style={{cursor:'pointer'}} onClick={()=>setShow('block')}><h2> <HiMenuAlt3/></h2></h5>
+                        <h2 style={{cursor:'pointer'}} onClick={()=>setShow('block')}> <HiMenuAlt3/></h2>
                        
                     </span>
                </div>

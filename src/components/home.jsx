@@ -27,7 +27,7 @@ const Home=()=>{
                     {/* the bio aspect */}
                     <div className="bio">
                         <div className="content">
-                            <h4>Ejeh Obiabo Immanuel</h4>
+                            <h4 >Ejeh Obiabo Immanuel</h4>
                             <center>   <span className="empty"></span></center>
                             <div className="author">
                             <p style={{textAlign:'center'}}>A UI/UX Designer | Web Developer  | App Developer .</p><p>    I simplify  the web and applicatio for you all i see in the world is designed and programmed. </p>

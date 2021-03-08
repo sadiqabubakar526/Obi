@@ -27,6 +27,7 @@
   padding: 0.7em;
   border-radius: 5px;
   color: rgba(96, 92, 99, 0.541);
+  outline: none;
 
 }
 .btn-view:hover {
